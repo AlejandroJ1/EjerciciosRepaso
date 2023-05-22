@@ -1,13 +1,152 @@
 package ejercicios_operaciones_matematicas;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Scanner;
 
-/**
- * Hello world!
- *
- */
+import java.util.Iterator;
+
 public class App {
     public static void main(String[] args) {
+
+        
+        // HashMap<String, Integer> edades = new HashMap<>();
+        // edades.put("Juan", 25);
+        // edades.put("María", 30);
+        // edades.put("Pedro", 40);
+
+        // // Recorrer y mostrar todos los elementos del HashMap
+        // for (HashMap.Entry<String, Integer> entry : edades.entrySet()) {
+        //     String nombre = entry.getKey();
+        //     int edad = entry.getValue();
+        //     System.out.println(nombre + " tiene " + edad + " años.");
+        // }
+
+        // // Buscar la clave "Juan" y mostrar su valor
+        // String claveBuscada = "Juan";
+        // if (edades.containsKey(claveBuscada)) {
+        //     int edadJuan = edades.get(claveBuscada);
+        //     System.out.println("La edad de " + claveBuscada + " es: " + edadJuan);
+        // } else {
+        //     System.out.println(claveBuscada + " no se encuentra en el HashMap.");
+        // }
+
+        // //Mostrar elementos comunes de dos HashSet
+        // HashSet<Integer> conjunto1 = new HashSet<>();
+        // conjunto1.add(1);
+        // conjunto1.add(2);
+        // conjunto1.add(3);
+
+        // HashSet<Integer> conjunto2 = new HashSet<>();
+        // conjunto2.add(2);
+        // conjunto2.add(3);
+        // conjunto2.add(4);
+
+        // // Crear un HashSet para almacenar los elementos comunes
+        // HashSet<Integer> elementosComunes = new HashSet<>();
+
+        // // Verificar elementos comunes entre los dos conjuntos
+        // for (int elemento : conjunto1) {
+        // if (conjunto2.contains(elemento)) {
+        // elementosComunes.add(elemento);
+        // }
+        // }
+
+        // // Mostrar los elementos comunes
+        // for (int elemento : elementosComunes) {
+        // System.out.println(elemento);
+        // }
+
+        // // Filtrar impares de un arraylist con Iterator
+        // ArrayList<Integer> numeros = new ArrayList<>();
+        // numeros.add(5);
+        // numeros.add(2);
+        // numeros.add(8);
+        // numeros.add(1);
+        // numeros.add(3);
+
+        // // Filtrar los números impares y eliminarlos del ArrayList
+        // Iterator<Integer> iter = numeros.iterator();
+        // while (iter.hasNext()) {
+        // int numero = iter.next();
+        // if (numero % 2 != 0) {
+        // iter.remove();
+        // }
+        // }
+
+        // // Mostrar los números filtrados
+        // for (int numero : numeros) {
+        // System.out.println(numero);
+        // }
+
+        // //Ordenar los numeros ingresados en el array list con la clase Collections
+        // ArrayList<Integer> numeros = new ArrayList<>();
+        // numeros.add(5);
+        // numeros.add(2);
+        // numeros.add(8);
+        // numeros.add(1);
+        // numeros.add(3);
+
+        // // Ordenar los números de forma ascendente
+        // Collections.sort(numeros);
+
+        // // Mostrar los números ordenados
+        // for (int numero : numeros) {
+        // System.out.println(numero);
+        // }
+
+        // //Ordenar los numeros ingresados en un arraylist con algoritmo burbuja
+
+        // ArrayList<Integer> numeros = new ArrayList<>();
+        // numeros.add(5);
+        // numeros.add(2);
+        // numeros.add(8);
+        // numeros.add(1);
+        // numeros.add(3);
+
+        // // Ordenar los números de forma ascendente utilizando el algoritmo de
+        // ordenamiento burbuja
+        // int n = numeros.size();
+        // for (int i = 0; i < n - 1; i++) {
+        // for (int j = 0; j < n - i - 1; j++) {
+        // if (numeros.get(j) > numeros.get(j + 1)) {
+        // int temp = numeros.get(j);
+        // numeros.set(j, numeros.get(j + 1));
+        // numeros.set(j + 1, temp);
+        // }
+        // }
+        // }
+
+        // // Mostrar los números ordenados
+        // for (int numero : numeros) {
+        // System.out.println(numero);
+        // }
+
+        // //Mostrar con hashmap el numero de veces que sale un número en una array.
+
+        // int[] numeros = { 1, 2, 3, 4, 2, 3, 1, 2, 4, 4, 5, 2, 3, 1 };
+
+        // HashMap<Integer, Integer> contador = new HashMap<>();
+        // for (int numero : numeros) {
+        // // Si el número ya está en el HashMap, incrementamos su contador en 1
+        // if (contador.containsKey(numero)) {
+        // int contadorActual = contador.get(numero);
+        // contador.put(numero, contadorActual + 1);
+        // }
+        // // Si el número no está en el HashMap, lo agregamos con contador 1
+        // else {
+        // contador.put(numero, 1);
+        // }
+        // }
+
+        // // Mostrar el conteo de elementos
+        // for (HashMap.Entry<Integer, Integer> entry : contador.entrySet()) {
+        // int numero = entry.getKey();
+        // int cantidad = entry.getValue();
+        // System.out.println(numero + ": " + cantidad);
+        // }
         /*
          * //Suma,resta,multiplicacion y division de dos valores.
          * int x = 144;
@@ -243,5 +382,7 @@ public class App {
          * 
          * System.out.println("El tiempo que tarda es:" + tiempo);
          */
+
     }
+
 }
